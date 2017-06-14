@@ -46,11 +46,12 @@ exports.getDimensions = function (query) {
 }
 
 exports.handler = function(event, context, callback) {
+  const key = event.queryStringParameters.key;
   const {
     width,
     height,
     originalKey
-  } = exports.getDimensions(event.queryStringParameters.key)
+  } = exports.getDimensions(key)
 
   S3.getObject({Bucket: BUCKET, Key: originalKey}).promise()
     .then(data => Sharp(data.Body)
