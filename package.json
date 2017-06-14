@@ -1,0 +1,19 @@
+{
+  "name": "image-resize",
+  "version": "1.0.0",
+  "description": "Serverless image resizing",
+  "readme": "Serverless image resizing",
+  "repository": "https://github.com/agoldis/serverless-image-resizing.git",
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "sharp": "^0.17.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.36.0",
+    "jest": "^20.0.4"
+  }
+}
