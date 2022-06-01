@@ -10,7 +10,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "sharp": "^0.22.1"
+    "sharp": "^0.30.5"
   },
   "devDependencies": {
     "aws-sdk": "^2.36.0",
